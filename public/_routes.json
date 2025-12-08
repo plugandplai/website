@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/favicon/*",
+    "/*.pdf",
+    "/*.png",
+    "/*.ico",
+    "/*.svg",
+    "/*.js",
+    "/*.css",
+    "/robots.txt",
+    "/_redirects"
+  ]
+}

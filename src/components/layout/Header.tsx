@@ -1,28 +1,42 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/enterprise", label: "Enterprise" },
-  { href: "/white-label", label: "White-Label" },
-  { href: "/developers", label: "Developers" },
+  { path: "enterprise", labelKey: "nav.enterprise" },
+  { path: "white-label", labelKey: "nav.whiteLabel" },
+  { path: "developers", labelKey: "nav.developers" },
 ];
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { lang } = useParams<{ lang: string }>();
   const { theme, toggleTheme } = useTheme();
+  const { t } = useTranslation();
+
+  // Get current language from URL or default to 'en'
+  const currentLang = lang || 'en';
+
+  // Helper to build language-prefixed paths
+  const buildPath = (path: string) => `/${currentLang}${path ? `/${path}` : ''}`;
+
+  // Check if current path matches
+  const isActive = (path: string) => {
+    const fullPath = buildPath(path);
+    return location.pathname === fullPath;
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-2xl border-b border-border/40 animate-fade-in" style={{ animationDelay: '0ms' }}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to={buildPath('enterprise')} className="flex items-center gap-2 group">
             <span className="text-lg font-semibold text-foreground tracking-tight group-hover:opacity-80 smooth-transition">
               plugandpl<span className="text-accent">.ai</span>
             </span>
@@ -32,16 +46,16 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
-                key={link.href}
-                to={link.href}
+                key={link.path}
+                to={buildPath(link.path)}
                 className={cn(
                   "px-4 py-2 text-sm rounded-full text-smooth bg-smooth",
-                  location.pathname === link.href
+                  isActive(link.path)
                     ? "text-foreground bg-secondary"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
                 )}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
           </nav>
@@ -64,8 +78,10 @@ export const Header = () => {
                 )} />
               </div>
             </button>
-            <Button variant="outline" size="sm" className="btn-scale">
-              Contact Sales
+            <Button variant="outline" size="sm" className="btn-scale" asChild>
+              <a href="mailto:support@plugandpl.ai">
+                {t('nav.contactSales')}
+              </a>
             </Button>
           </div>
 
@@ -113,27 +129,29 @@ export const Header = () => {
           <nav className="flex flex-col gap-1">
             {navLinks.map((link, index) => (
               <Link
-                key={link.href}
-                to={link.href}
+                key={link.path}
+                to={buildPath(link.path)}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
                   "px-4 py-3 text-sm rounded-lg text-smooth bg-smooth",
                   mobileMenuOpen ? "animate-fade-up" : "",
-                  location.pathname === link.href
+                  isActive(link.path)
                     ? "text-foreground bg-secondary"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
                 )}
                 style={mobileMenuOpen ? { animationDelay: `${index * 50}ms` } : {}}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
             <div 
               className={cn("mt-4", mobileMenuOpen ? "animate-fade-up" : "")}
               style={mobileMenuOpen ? { animationDelay: '200ms' } : {}}
             >
-              <Button variant="outline" className="w-full btn-scale">
-                Contact Sales
+              <Button variant="outline" className="w-full btn-scale" asChild>
+                <a href="mailto:support@plugandpl.ai">
+                  {t('nav.contactSales')}
+                </a>
               </Button>
             </div>
           </nav>

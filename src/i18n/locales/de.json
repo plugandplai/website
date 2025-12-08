@@ -1,0 +1,258 @@
+{
+  "nav": {
+    "enterprise": "Enterprise",
+    "whiteLabel": "White-Label",
+    "developers": "Entwickler",
+    "contactSales": "Vertrieb kontaktieren"
+  },
+  "hero": {
+    "badge": "KI-Kommunikationsplattform",
+    "title": "Die modulare KI-Plattform",
+    "subtitle": "für Kommunikation & Automatisierung.",
+    "description": "Live-Übersetzungen, intelligente Sprach-Agents, vollautomatisierte Chatbots, Telefonie, WhatsApp, E-Mail und mehr – modular, skalierbar und in Minuten einsatzbereit.",
+    "cta": "Vertrieb kontaktieren",
+    "explore": "Lösungen erkunden"
+  },
+  "audience": {
+    "title": "Entwickelt für Ihr Geschäftsmodell",
+    "description": "Egal ob Unternehmensgruppe, Dienstleister oder Entwicklungsteam – plugandpl.ai liefert die passende Infrastruktur.",
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "Sicherheitsorientierte Bereitstellungen mit eigenem Branding, SSO, Audit-Funktionen und dediziertem Support."
+    },
+    "whiteLabel": {
+      "title": "White-Label",
+      "description": "Launchen Sie Ihre eigene KI-Plattform – mit Ihrer Domain, Ihrem Design und Ihren Preisen."
+    },
+    "developers": {
+      "title": "Entwickler",
+      "description": "Flexible APIs, SDKs und Komponenten für nahtlose Integration in Web, Mobile und Backend-Systeme."
+    },
+    "learnMore": "Mehr erfahren"
+  },
+  "enterpriseFeatures": {
+    "title": "Enterprise-Funktionen",
+    "customBranding": {
+      "title": "Individuelles Branding",
+      "description": "Logo, Farben, Domain & UI – vollständig an Ihre Markenwelt angepasst."
+    },
+    "enterpriseSecurity": {
+      "title": "Enterprise-Sicherheit",
+      "description": "ISO 27001-ready, Datenverschlüsselung, Audit-Logging und konfigurierbare Compliance-Profile."
+    },
+    "onPremDeployment": {
+      "title": "DSGVO & EU AI Act",
+      "description": "Vollständig konform mit europäischen Datenschutz- und KI-Regularien – rechtssicher und zukunftsfähig."
+    },
+    "roleBasedAccess": {
+      "title": "Rollenbasiertes Zugriffssystem",
+      "description": "Granulare Berechtigungen, SSO und flexible Mandantenverwaltung."
+    },
+    "multiChannel": {
+      "title": "Multi-Channel-Kommunikation",
+      "description": "Bereit für Web, Mobile, E-Mail, WhatsApp, Telefonie, SMS und weitere Messaging-Kanäle."
+    },
+    "teamManagement": {
+      "title": "Team- & Mandanten-Management",
+      "description": "Organisieren Sie Abteilungen, Projekte und Workflows in einer skalierbaren Struktur."
+    }
+  },
+  "customerStory": {
+    "label": "Kundenreferenz",
+    "trumpf": {
+      "title": "DGKI",
+      "description": "KI-Spezialist setzt plugandpl.ai für KI-Support in über 12 Sprachen ein.",
+      "points": [
+        "Phone Assistent, Chatbot, WhatsApp-Integration",
+        "Tiefe Integration in Salesforce",
+        "45 % weniger Support-Tickets",
+        "99,9 % Verfügbarkeit durch dedizierten Enterprise-Support"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Bereit loszulegen?",
+    "description": "Schließen Sie sich Unternehmen, Agenturen und Entwicklern an, die plugandpl.ai für moderne KI-Kommunikation nutzen.",
+    "button": "Vertrieb kontaktieren"
+  },
+  "developers": {
+    "badge": "Entwickler",
+    "title": "Für Entwickler gebaut",
+    "subtitle": "APIs, Komponenten & Widgets",
+    "description": "Integrieren Sie KI-Agenten nahtlos in React, Vue, WordPress, Shopify oder jede eigene Plattform. Schnell. Stabil. Zukunftssicher.",
+    "requestAccess": "API-Zugang anfordern",
+    "components": {
+      "title": "Fertige Komponenten",
+      "react": {
+        "title": "React Widget",
+        "description": "Drop-in-Komponente für moderne Frontends."
+      },
+      "vue": {
+        "title": "Vue Komponente",
+        "description": "Einfache, native Integration für Vue-Apps."
+      },
+      "wordpress": {
+        "title": "WordPress Plugin",
+        "description": "Ein-Klick-Installation für Websites, Support & Lead-Generierung."
+      },
+      "shopify": {
+        "title": "Shopify Erweiterung",
+        "description": "Nahtlose KI-Schicht für E-Commerce & Produktberatung."
+      }
+    },
+    "customerStory": {
+      "title": "Sidomo",
+      "description": "Hausverwaltungs-Plattform mit intelligenter Telefonie.",
+      "points": [
+        "Individuelle Sprach-Agenten",
+        "Automatischer Sync von Gesprächen ins Verwaltungssystem",
+        "Onboarding in weniger als einem Tag"
+      ]
+    },
+    "apiFeatures": {
+      "title": "API-Funktionen",
+      "sdks": {
+        "title": "SDKs",
+        "description": "JavaScript, Python, Go, PHP und weitere — klar strukturiert und entwicklerfreundlich."
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "description": "Echtzeit-Events für Nachrichten, Status, Aktionen & Automationen."
+      },
+      "streaming": {
+        "title": "Streaming API",
+        "description": "Antworten ohne spürbare Latenz — ideal für Chat, Support und Assistants."
+      },
+      "multiAgent": {
+        "title": "Multi-Agent System",
+        "description": "Mehrere spezialisierte Agents für komplexe Geschäftslogiken."
+      }
+    },
+    "whyChoose": {
+      "title": "Warum Entwickler",
+      "subtitle": "plugandpl.ai wählen",
+      "deploy": {
+        "title": "Deployment in Minuten",
+        "description": "Von null zur produktionsreifen Integration in wenigen Codezeilen."
+      },
+      "security": {
+        "title": "Enterprise-Security",
+        "description": "ISO-27001 ready, vollständig verschlüsselte Kommunikation, Audit-Optionen."
+      },
+      "models": {
+        "title": "Neueste KI-Modelle",
+        "description": "Unterstützt führende Modelle von OpenAI, Anthropic, Mistral & eigene Modelle."
+      }
+    },
+    "cta": {
+      "title": "API-Zugang anfordern",
+      "description": "Starten Sie mit unserer Entwicklerplattform und bauen Sie erstaunliche KI-Erlebnisse.",
+      "button": "API-Key erhalten"
+    }
+  },
+  "whiteLabel": {
+    "badge": "White-Label",
+    "title": "Ihre Plattform.",
+    "subtitle": "Ihre Marke.",
+    "description": "Starten Sie Ihre vollständig gebrandete KI-Kommunikationsplattform – unter Ihrer Domain, Ihren Preisen und für Ihre eigenen Kunden.",
+    "cta": "Partner werden",
+    "features": {
+      "title": "Alles, was Sie für Ihr eigenes Angebot brauchen",
+      "branding": {
+        "title": "Volle Branding-Kontrolle",
+        "description": "Eigene Domain, Farben, Logo, UI-Stile und E-Mail-Templates. Ihre Kunden sehen ausschließlich Ihre Marke."
+      },
+      "pricing": {
+        "title": "Flexible Preisgestaltung",
+        "description": "Definieren Sie Ihre eigenen Tarife, Margen und Abrechnungsmodelle."
+      },
+      "dashboard": {
+        "title": "Admin-Dashboard",
+        "description": "Verwalten Sie Kund:innen, Accounts, Abrechnung und Nutzung zentral an einem Ort."
+      },
+      "support": {
+        "title": "Premium-Support",
+        "description": "Dedizierter Ansprechpartner für Onboarding, Technik & Wachstum."
+      }
+    },
+    "customerStory": {
+      "title": "FlowVoice",
+      "description": "White-Label KI-Kommunikationsplattform, eingesetzt von Agenturen und Unternehmen in der DACH-Region.",
+      "points": [
+        "Vollständig gebrandete Multi-Channel-Plattform",
+        "Domain & UI komplett individualisiert",
+        "Integration in CRM- und Kundensysteme",
+        "Erfolgreich im produktiven Einsatz bei zahlreichen Partnern"
+      ]
+    },
+    "developerLink": {
+      "title": "Tiefere Software-Integration benötigt?",
+      "button": "Entwickler-Bereich besuchen"
+    },
+    "cta2": {
+      "title": "Partner werden",
+      "description": "Treten Sie unserem Partnerprogramm bei und starten Sie Ihre eigene KI-Plattform.",
+      "button": "Jetzt bewerben"
+    }
+  },
+  "footer": {
+    "description": "Modulare KI-Plattform für Unternehmen, Agenturen und Entwickler.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "links": {
+      "enterprise": "Enterprise",
+      "whiteLabel": "White-Label",
+      "developers": "Entwickler",
+      "pricing": "Preise",
+      "about": "Über uns",
+      "blog": "Blog",
+      "careers": "Karriere",
+      "contact": "Kontakt",
+      "imprint": "Impressum",
+      "privacy": "Datenschutzerklärung",
+      "terms": "AGB",
+      "dataProcessing": "Datenverarbeitung",
+      "processorList": "Liste der Auftragsverarbeiter",
+      "whistleblower": "Hinweisgeberstelle",
+      "transparency": "Transparenzdokument",
+      "codeOfConduct": "Verhaltenskodex",
+      "security": "Sicherheit"
+    },
+    "copyright": "© {{year}} plugandpl.ai. Alle Rechte vorbehalten."
+  },
+  "imprint": {
+    "title": "Impressum",
+    "lastUpdated": "Diese Seite wurde zuletzt 2024 aktualisiert.",
+    "provider": {
+      "title": "Anbieter"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "register": {
+      "title": "Handelsregistereintrag",
+      "type": "Unternehmensform",
+      "location": "Sitz",
+      "founded": "Gründungsjahr",
+      "court": "Registergericht",
+      "number": "Registernummer",
+      "vatId": "USt-IdNr."
+    },
+    "responsible": {
+      "title": "Verantwortlich für den Inhalt"
+    },
+    "managingDirector": {
+      "title": "Vertretungsberechtigter Geschäftsführer"
+    },
+    "dispute": {
+      "title": "Außergerichtliche Streitbeilegung",
+      "text": "Nutzer können sich jederzeit per E-Mail (support@plugandpl.ai) mit einer Beschwerde bezüglich der Nutzung der Website an Digital Tribe GmbH wenden. Digital Tribe GmbH ist weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    },
+    "dataProtection": {
+      "title": "Datenschutz",
+      "text": "Nutzer können sich jederzeit per E-Mail (support@plugandpl.ai) mit Fragen zum Datenschutz an Digital Tribe GmbH wenden."
+    },
+    "inclusivity": "Aus Gründen der besseren Lesbarkeit wird auf unseren Websites, in unseren Publikationen und in der Kommunikation auf die gleichzeitige Verwendung männlicher, weiblicher, diverser und anderer Geschlechtsidentitäten (m/w/d/andere) verzichtet. Alle verwendeten Begriffe gelten gleichermaßen für alle Geschlechter. Digital Tribe GmbH ist ein inklusives Unternehmen und diskriminiert nicht aufgrund von Geschlecht, Rasse, Hautfarbe, ethnischer oder sozialer Herkunft, genetischer Merkmale, Sprache, Religion oder Weltanschauung, politischer oder sonstiger Meinungen, Zugehörigkeit zu einer nationalen Minderheit, Vermögen, Geburt, Behinderung, Alter, sexueller Orientierung oder Staatsangehörigkeit."
+  }
+}

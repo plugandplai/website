@@ -1,23 +1,27 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AudienceSection } from "@/components/AudienceSection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Webhook, Radio, Bot, FileCode, Package, CheckCircle } from "lucide-react";
+import { ArrowRight, Code2, Webhook, Radio, Bot, FileCode, Package, CheckCircle, Zap, Shield, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const components = [
-  { icon: FileCode, title: "React Widget", description: "Drop-in component" },
-  { icon: FileCode, title: "Vue Component", description: "Native Vue.js integration" },
-  { icon: Package, title: "WordPress Plugin", description: "One-click install" },
-  { icon: Package, title: "Shopify Extension", description: "Seamless integration" },
+  { icon: FileCode, titleKey: "developers.components.react.title", descKey: "developers.components.react.description" },
+  { icon: FileCode, titleKey: "developers.components.vue.title", descKey: "developers.components.vue.description" },
+  { icon: Package, titleKey: "developers.components.wordpress.title", descKey: "developers.components.wordpress.description" },
+  { icon: Package, titleKey: "developers.components.shopify.title", descKey: "developers.components.shopify.description" },
 ];
 
 const apiFeatures = [
-  { icon: Code2, title: "SDKs", description: "JS, Python, Go, and more" },
-  { icon: Webhook, title: "Webhooks", description: "Real-time events" },
-  { icon: Radio, title: "Streaming API", description: "Instant feedback" },
-  { icon: Bot, title: "Multi-Agent", description: "Complex workflows" },
+  { icon: Code2, titleKey: "developers.apiFeatures.sdks.title", descKey: "developers.apiFeatures.sdks.description" },
+  { icon: Webhook, titleKey: "developers.apiFeatures.webhooks.title", descKey: "developers.apiFeatures.webhooks.description" },
+  { icon: Radio, titleKey: "developers.apiFeatures.streaming.title", descKey: "developers.apiFeatures.streaming.description" },
+  { icon: Bot, titleKey: "developers.apiFeatures.multiAgent.title", descKey: "developers.apiFeatures.multiAgent.description" },
 ];
 
 const Developers = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -26,19 +30,21 @@ const Developers = () => {
       <section className="pt-32 pb-20 md:pt-40 md:pb-32">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <p className="text-accent text-sm font-medium mb-4 animate-fade-up" style={{ animationDelay: '0ms' }}>Developers</p>
+            <p className="text-accent text-sm font-medium mb-4 animate-fade-up" style={{ animationDelay: '0ms' }}>{t('developers.badge')}</p>
             <h1 className="text-4xl md:text-6xl font-medium text-foreground leading-[1.1] tracking-tight mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
-              Built for developers
+              {t('developers.title')}
               <br />
-              <span className="font-serif italic text-muted-foreground">API, Components & Widgets</span>
+              <span className="font-serif italic text-muted-foreground">{t('developers.subtitle')}</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl animate-fade-up" style={{ animationDelay: '200ms' }}>
-              Integrate into React, Vue, WordPress, Shopify, and any platform with our powerful APIs.
+              {t('developers.description')}
             </p>
             <div className="animate-fade-up" style={{ animationDelay: '300ms' }}>
-              <Button size="lg" variant="accent" className="btn-scale">
-                Request API Access
-                <ArrowRight className="h-4 w-4 arrow-smooth" />
+              <Button size="lg" variant="accent" className="btn-scale" asChild>
+                <a href="mailto:support@plugandpl.ai">
+                  {t('developers.requestAccess')}
+                  <ArrowRight className="h-4 w-4 arrow-smooth" />
+                </a>
               </Button>
             </div>
           </div>
@@ -48,17 +54,19 @@ const Developers = () => {
       {/* Components */}
       <section className="section-padding border-t border-border/40">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-12 animate-fade-up" style={{ animationDelay: '0ms' }}>
-            Pre-built components
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 animate-fade-up" style={{ animationDelay: '0ms' }}>
+              {t('developers.components.title')}
+            </h2>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
             {components.map((item) => (
-              <div key={item.title} className="glass-card p-6 rounded-xl group hover-lift">
-                <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center mb-4 group-hover:bg-accent/20 bg-smooth">
-                  <item.icon className="h-5 w-5 text-muted-foreground group-hover:text-accent icon-smooth" />
+              <div key={item.titleKey} className="glass-card p-6 rounded-xl group hover-lift">
+                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:bg-accent/20 bg-smooth">
+                  <item.icon className="h-6 w-6 text-muted-foreground group-hover:text-accent icon-smooth" />
                 </div>
-                <h3 className="font-medium text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <h3 className="text-xl font-medium text-foreground mb-2">{t(item.titleKey)}</h3>
+                <p className="text-sm text-muted-foreground">{t(item.descKey)}</p>
               </div>
             ))}
           </div>
@@ -70,18 +78,13 @@ const Developers = () => {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-left" style={{ animationDelay: '0ms' }}>
-              <p className="text-accent text-sm font-medium mb-4">Customer Story</p>
-              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6">Das Programm</h2>
+              <p className="text-accent text-sm font-medium mb-4">{t('customerStory.label')}</p>
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6">{t('developers.customerStory.title')}</h2>
               <p className="text-muted-foreground mb-8">
-                SaaS platform that integrated AI agents for automated customer onboarding.
+                {t('developers.customerStory.description')}
               </p>
               <ul className="space-y-4 stagger-children">
-                {[
-                  "Custom AI agent in React dashboard",
-                  "Webhook integration with CRM",
-                  "Real-time streaming responses",
-                  "60% reduction in onboarding time",
-                ].map((point) => (
+                {(t('developers.customerStory.points', { returnObjects: true }) as string[]).map((point) => (
                   <li key={point} className="flex items-center gap-3 text-sm text-foreground">
                     <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 icon-smooth" />
                     {point}
@@ -99,19 +102,68 @@ const Developers = () => {
       {/* API Features */}
       <section className="section-padding border-t border-border/40">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-12 animate-fade-up" style={{ animationDelay: '0ms' }}>
-            API features
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 animate-fade-up" style={{ animationDelay: '0ms' }}>
+              {t('developers.apiFeatures.title')}
+            </h2>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
             {apiFeatures.map((item) => (
-              <div key={item.title} className="group">
-                <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center mb-4 group-hover:bg-accent/20 bg-smooth">
-                  <item.icon className="h-5 w-5 text-muted-foreground group-hover:text-accent icon-smooth" />
+              <div key={item.titleKey} className="glass-card p-6 rounded-xl group hover-lift">
+                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:bg-accent/20 bg-smooth">
+                  <item.icon className="h-6 w-6 text-muted-foreground group-hover:text-accent icon-smooth" />
                 </div>
-                <h3 className="font-medium text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <h3 className="text-xl font-medium text-foreground mb-2">{t(item.titleKey)}</h3>
+                <p className="text-sm text-muted-foreground">{t(item.descKey)}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why teams choose plugandpl.ai Section */}
+      <section className="section-padding border-t border-border/40">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="animate-slide-left" style={{ animationDelay: '0ms' }}>
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6">
+                {t('developers.whyChoose.title')}
+                <br />
+                <span className="font-serif italic text-muted-foreground">{t('developers.whyChoose.subtitle')}</span>
+              </h2>
+              <div className="space-y-6 stagger-children">
+                <FeatureItem
+                  icon={Zap}
+                  title={t('developers.whyChoose.deploy.title')}
+                  description={t('developers.whyChoose.deploy.description')}
+                />
+                <FeatureItem
+                  icon={Shield}
+                  title={t('developers.whyChoose.security.title')}
+                  description={t('developers.whyChoose.security.description')}
+                />
+                <FeatureItem
+                  icon={Sparkles}
+                  title={t('developers.whyChoose.models.title')}
+                  description={t('developers.whyChoose.models.description')}
+                />
+              </div>
+            </div>
+            <div className="glass-card p-8 rounded-2xl animate-slide-right" style={{ animationDelay: '150ms' }}>
+              <pre className="text-sm font-mono text-muted-foreground overflow-x-auto">
+                <code>{`import { PlugAI } from '@plugandpl/react'
+
+function App() {
+  return (
+    <PlugAI
+      apiKey="pk_..."
+      theme="dark"
+      position="bottom-right"
+    />
+  )
+}`}</code>
+              </pre>
+            </div>
           </div>
         </div>
       </section>
@@ -147,19 +199,23 @@ function App() {
         </div>
       </section>
 
+      <AudienceSection />
+
       {/* CTA */}
       <section className="section-padding border-t border-border/40">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6 animate-fade-up" style={{ animationDelay: '0ms' }}>
-            Request API access
+            {t('developers.cta.title')}
           </h2>
           <p className="text-muted-foreground mb-10 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: '100ms' }}>
-            Get started with our developer platform and build amazing AI experiences.
+            {t('developers.cta.description')}
           </p>
           <div className="animate-fade-up" style={{ animationDelay: '200ms' }}>
-            <Button size="xl" variant="accent" className="btn-scale">
-              Get API Key
-              <ArrowRight className="h-4 w-4 arrow-smooth" />
+            <Button size="xl" variant="accent" className="btn-scale" asChild>
+              <a href="mailto:support@plugandpl.ai">
+                {t('developers.cta.button')}
+                <ArrowRight className="h-4 w-4 arrow-smooth" />
+              </a>
             </Button>
           </div>
         </div>
@@ -169,5 +225,25 @@ function App() {
     </div>
   );
 };
+
+const FeatureItem = ({
+  icon: Icon,
+  title,
+  description,
+}: {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+}) => (
+  <div className="flex gap-4 group">
+    <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 bg-smooth">
+      <Icon className="h-5 w-5 text-accent icon-smooth" />
+    </div>
+    <div>
+      <h3 className="font-medium text-foreground mb-1">{title}</h3>
+      <p className="text-sm text-muted-foreground">{description}</p>
+    </div>
+  </div>
+);
 
 export default Developers;

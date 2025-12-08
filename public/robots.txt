@@ -1,14 +1,24 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /de/imprint
+Disallow: /en/imprint
 
 User-agent: Bingbot
 Allow: /
+Disallow: /de/imprint
+Disallow: /en/imprint
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /de/imprint
+Disallow: /en/imprint
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /de/imprint
+Disallow: /en/imprint
 
 User-agent: *
 Allow: /
+Disallow: /de/imprint
+Disallow: /en/imprint

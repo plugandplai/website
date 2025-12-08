@@ -1,0 +1,258 @@
+{
+  "nav": {
+    "enterprise": "Enterprise",
+    "whiteLabel": "White-Label",
+    "developers": "Developers",
+    "contactSales": "Contact Sales"
+  },
+  "hero": {
+    "badge": "AI Communications Platform",
+    "title": "The modular AI platform",
+    "subtitle": "for communication & automation.",
+    "description": "Live translations, intelligent voice agents, fully automated chatbots, telephony, WhatsApp, email and more – modular, scalable, and ready to deploy in minutes.",
+    "cta": "Contact Sales",
+    "explore": "Explore Solutions"
+  },
+  "audience": {
+    "title": "Built for your business model",
+    "description": "Whether you're an enterprise group, service provider, or development team – plugandpl.ai delivers the right infrastructure.",
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "Security-first deployments with custom branding, SSO, audit features, and dedicated support."
+    },
+    "whiteLabel": {
+      "title": "White-Label",
+      "description": "Launch your own AI platform – with your domain, your design, and your pricing."
+    },
+    "developers": {
+      "title": "Developers",
+      "description": "Flexible APIs, SDKs, and components for seamless integration into web, mobile, and backend systems."
+    },
+    "learnMore": "Learn more"
+  },
+  "enterpriseFeatures": {
+    "title": "Enterprise Features",
+    "customBranding": {
+      "title": "Custom Branding",
+      "description": "Logo, colors, domain & UI – fully adapted to your brand identity."
+    },
+    "enterpriseSecurity": {
+      "title": "Enterprise Security",
+      "description": "ISO 27001 ready, data encryption, audit logging, and configurable compliance profiles."
+    },
+    "onPremDeployment": {
+      "title": "GDPR & EU AI Act",
+      "description": "Fully compliant with European data protection and AI regulations – legally secure and future-proof."
+    },
+    "roleBasedAccess": {
+      "title": "Role-Based Access System",
+      "description": "Granular permissions, SSO, and flexible tenant management."
+    },
+    "multiChannel": {
+      "title": "Multi-Channel Communication",
+      "description": "Ready for web, mobile, email, WhatsApp, telephony, SMS, and more messaging channels."
+    },
+    "teamManagement": {
+      "title": "Team & Tenant Management",
+      "description": "Organize departments, projects, and workflows in a scalable structure."
+    }
+  },
+  "customerStory": {
+    "label": "Customer Story",
+    "trumpf": {
+      "title": "DGKI",
+      "description": "AI specialist uses plugandpl.ai for AI support in over 12 languages.",
+      "points": [
+        "Phone assistant, chatbot, WhatsApp integration",
+        "Deep integration with Salesforce",
+        "45% fewer support tickets",
+        "99.9% uptime with dedicated enterprise support"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to get started?",
+    "description": "Join enterprises, agencies, and developers using plugandpl.ai for modern AI communications.",
+    "button": "Contact Sales"
+  },
+  "developers": {
+    "badge": "Developers",
+    "title": "Built for developers",
+    "subtitle": "APIs, Components & Widgets",
+    "description": "Integrate AI agents seamlessly into React, Vue, WordPress, Shopify, or any custom platform. Fast. Stable. Future-proof.",
+    "requestAccess": "Request API Access",
+    "components": {
+      "title": "Pre-built components",
+      "react": {
+        "title": "React Widget",
+        "description": "Drop-in component for modern frontends."
+      },
+      "vue": {
+        "title": "Vue Component",
+        "description": "Simple, native integration for Vue apps."
+      },
+      "wordpress": {
+        "title": "WordPress Plugin",
+        "description": "One-click installation for websites, support & lead generation."
+      },
+      "shopify": {
+        "title": "Shopify Extension",
+        "description": "Seamless AI layer for e-commerce & product consulting."
+      }
+    },
+    "customerStory": {
+      "title": "Sidomo",
+      "description": "Property management platform with intelligent telephony.",
+      "points": [
+        "Custom voice agents",
+        "Automatic sync of conversations to management system",
+        "Onboarding in less than a day"
+      ]
+    },
+    "apiFeatures": {
+      "title": "API Features",
+      "sdks": {
+        "title": "SDKs",
+        "description": "JavaScript, Python, Go, PHP and more — clearly structured and developer-friendly."
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "description": "Real-time events for messages, status, actions & automations."
+      },
+      "streaming": {
+        "title": "Streaming API",
+        "description": "Responses without noticeable latency — ideal for chat, support, and assistants."
+      },
+      "multiAgent": {
+        "title": "Multi-Agent System",
+        "description": "Multiple specialized agents for complex business logic."
+      }
+    },
+    "whyChoose": {
+      "title": "Why developers choose",
+      "subtitle": "plugandpl.ai",
+      "deploy": {
+        "title": "Deployment in minutes",
+        "description": "From zero to production-ready integration in just a few lines of code."
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "ISO 27001 ready, fully encrypted communication, audit options."
+      },
+      "models": {
+        "title": "Latest AI models",
+        "description": "Supports leading models from OpenAI, Anthropic, Mistral & custom models."
+      }
+    },
+    "cta": {
+      "title": "Request API access",
+      "description": "Get started with our developer platform and build amazing AI experiences.",
+      "button": "Get API Key"
+    }
+  },
+  "whiteLabel": {
+    "badge": "White-Label",
+    "title": "Your platform.",
+    "subtitle": "Your brand.",
+    "description": "Launch your fully branded AI communications platform – under your domain, your pricing, and for your own customers.",
+    "cta": "Partner With Us",
+    "features": {
+      "title": "Everything you need for your own offering",
+      "branding": {
+        "title": "Full Branding Control",
+        "description": "Custom domain, colors, logo, UI styles, and email templates. Your customers see only your brand."
+      },
+      "pricing": {
+        "title": "Flexible Pricing",
+        "description": "Define your own plans, margins, and billing models."
+      },
+      "dashboard": {
+        "title": "Admin Dashboard",
+        "description": "Manage customers, accounts, billing, and usage centrally in one place."
+      },
+      "support": {
+        "title": "Premium Support",
+        "description": "Dedicated contact for onboarding, technical support & growth."
+      }
+    },
+    "customerStory": {
+      "title": "FlowVoice",
+      "description": "White-label AI communications platform used by agencies and enterprises in the DACH region.",
+      "points": [
+        "Fully branded multi-channel platform",
+        "Domain & UI fully customized",
+        "Integration with CRM and customer systems",
+        "Successfully deployed in production with numerous partners"
+      ]
+    },
+    "developerLink": {
+      "title": "Need deeper software integration?",
+      "button": "Visit Developer section"
+    },
+    "cta2": {
+      "title": "Become a partner",
+      "description": "Join our partner program and launch your own AI platform.",
+      "button": "Apply Now"
+    }
+  },
+  "footer": {
+    "description": "Modular AI platform for enterprises, agencies, and developers.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "enterprise": "Enterprise",
+      "whiteLabel": "White-Label",
+      "developers": "Developers",
+      "pricing": "Pricing",
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "imprint": "Imprint",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "dataProcessing": "Data Processing",
+      "processorList": "List of Processors",
+      "whistleblower": "Whistleblower",
+      "transparency": "Transparency Document",
+      "codeOfConduct": "Code of Conduct",
+      "security": "Security"
+    },
+    "copyright": "© {{year}} plugandpl.ai. All rights reserved."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "lastUpdated": "This page was last updated in 2024.",
+    "provider": {
+      "title": "Provider"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "register": {
+      "title": "Register Entry",
+      "type": "Type of company",
+      "location": "Registered office",
+      "founded": "Year of foundation",
+      "court": "Registration court",
+      "number": "Registration number",
+      "vatId": "VAT identification number"
+    },
+    "responsible": {
+      "title": "Responsible for the content"
+    },
+    "managingDirector": {
+      "title": "Authorized managing director"
+    },
+    "dispute": {
+      "title": "Out-of-court dispute resolution",
+      "text": "Users can always contact Digital Tribe GmbH by email (support@plugandpl.ai) with a complaint regarding the use of the website. Digital Tribe GmbH is neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+    },
+    "dataProtection": {
+      "title": "Data protection",
+      "text": "Users can always contact Digital Tribe GmbH by email (support@plugandpl.ai) regarding data protection questions."
+    },
+    "inclusivity": "For the sake of better readability, the simultaneous use of masculine, feminine, diverse, and other gender identities (m/f/d/other) is avoided on our websites, in our publications, and in communication. All terms used should apply equally to all genders. Digital Tribe GmbH is an inclusive company and does not discriminate based on gender, race, skin color, ethnic or social origin, genetic characteristics, language, religion or belief, political or other opinions, membership in a national minority, wealth, birth, disability, age, sexual orientation, or nationality."
+  }
+}
