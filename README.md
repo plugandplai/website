@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# plugandpl.ai Website
 
-## Project info
+This is the official website for plugandpl.ai, built with Next.js 15 and TypeScript.
 
-**URL**: https://lovable.dev/projects/88903c75-97e2-4e84-b60c-28aac8d5a3b3
+## Tech Stack
 
-## How can I edit this code?
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI + shadcn/ui
+- **Icons**: Lucide React
+- **State Management**: React Query (TanStack Query)
+- **Theme**: next-themes
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/88903c75-97e2-4e84-b60c-28aac8d5a3b3) and start prompting.
+- Node.js 18+ or Bun
+- npm, yarn, pnpm, or bun
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+# Install dependencies
+npm install
+# or
+bun install
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Run the development server
+npm run dev
+# or
+bun dev
+```
 
-**Use GitHub Codespaces**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Build
 
-## What technologies are used for this project?
+```bash
+# Create a production build
+npm run build
+# or
+bun run build
+```
 
-This project is built with:
+### Start Production Server
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+# Start the production server
+npm start
+# or
+bun start
+```
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/88903c75-97e2-4e84-b60c-28aac8d5a3b3) and click on Share -> Publish.
+```
+├── app/                    # Next.js App Router
+│   ├── components/        # React components
+│   │   ├── layout/       # Layout components (Header, Footer)
+│   │   ├── providers/    # Context providers
+│   │   └── ui/           # UI components (shadcn/ui)
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   ├── page.tsx          # Home page (Enterprise)
+│   ├── white-label/      # White-Label page
+│   ├── developers/       # Developers page
+│   ├── imprint/          # Imprint page
+│   ├── layout.tsx        # Root layout
+│   ├── globals.css       # Global styles
+│   └── not-found.tsx     # 404 page
+├── public/               # Static assets
+├── next.config.ts        # Next.js configuration
+├── tailwind.config.ts    # Tailwind CSS configuration
+└── tsconfig.json         # TypeScript configuration
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Features
 
-Yes, you can!
+- ✅ **SEO Optimized**: Built-in metadata and Open Graph support
+- ✅ **Performance**: Optimized with Next.js 15 App Router
+- ✅ **Responsive**: Mobile-first design
+- ✅ **Dark Mode**: Theme switching with next-themes
+- ✅ **Type Safe**: Full TypeScript support
+- ✅ **Accessible**: Built with Radix UI primitives
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Pages
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- `/` - Enterprise Solutions
+- `/white-label` - White-Label Platform
+- `/developers` - Developer Resources
+- `/imprint` - Legal Imprint
+
+## Migration Notes
+
+This project was migrated from Vite + React Router to Next.js 15:
+
+- Removed i18n setup (previously used react-i18next)
+- Migrated from React Router to Next.js App Router
+- Updated all components to remove translation dependencies
+- Improved SEO with Next.js metadata API
+- Enhanced performance with server-side rendering
+
+## License
+
+© 2024 plugandpl.ai. All rights reserved.
