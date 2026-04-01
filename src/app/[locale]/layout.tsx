@@ -7,6 +7,9 @@ import { routing } from "../../i18n/routing";
 import { notFound } from "next/navigation";
 import {getMessages} from 'next-intl/server';
 import {NextIntlClientProvider} from 'next-intl';
+import MaintenancePage from "./maintenance";
+
+const MAINTENANCE_MODE = true;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,7 +76,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Providers>
-            {children}
+            {MAINTENANCE_MODE ? <MaintenancePage /> : children}
           </Providers>
         </NextIntlClientProvider>
       </body>
