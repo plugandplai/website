@@ -1,38 +1,32 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import { Footer } from './components/layout/Footer';
 
 export default function MaintenancePage() {
   const t = useTranslations('maintenance');
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center relative overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/15 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/8 rounded-full blur-[80px] translate-x-1/3 translate-y-1/3" />
-        <div className="absolute top-0 left-0 w-[200px] h-[200px] bg-accent/8 rounded-full blur-[60px] -translate-x-1/3 -translate-y-1/3" />
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `
-              linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-              linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)
-            `,
-            backgroundSize: '60px 60px',
-          }}
-        />
-      </div>
-
-      <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
-        {/* Logo */}
-        <div className="mb-10">
-          <span className="text-2xl font-semibold tracking-tight text-foreground">
-            plugandpl
-            <span className="text-accent">.ai</span>
-          </span>
+    <div className="min-h-screen bg-background flex flex-col">
+      <div className="flex-1 flex items-center justify-center relative overflow-hidden">
+        {/* Background effects */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/15 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/8 rounded-full blur-[80px] translate-x-1/3 translate-y-1/3" />
+          <div className="absolute top-0 left-0 w-[200px] h-[200px] bg-accent/8 rounded-full blur-[60px] -translate-x-1/3 -translate-y-1/3" />
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage: `
+                linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
+                linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)
+              `,
+              backgroundSize: '60px 60px',
+            }}
+          />
         </div>
 
-        {/* Icon */}
+        <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
+          {/* Icon */}
         <div className="mb-8 flex justify-center">
           <div className="w-20 h-20 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
             <svg
@@ -64,6 +58,9 @@ export default function MaintenancePage() {
         <div className="w-16 h-0.5 bg-accent/40 mx-auto mb-8 rounded-full" />
 
       </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
