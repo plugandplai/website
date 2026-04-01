@@ -7,11 +7,6 @@ export const Footer = () => {
   const t = useTranslations();
   
   const footerLinks = {
-    product: [
-      { labelKey: "footer.links.enterprise", path: "/" },
-      { labelKey: "footer.links.whiteLabel", path: "/white-label" },
-      { labelKey: "footer.links.developers", path: "/developers" },
-    ],
     legal: [
       { labelKey: "footer.links.dataProcessing", path: "/Digital_Tribe_Data_Processing_EN.pdf", isExternal: true },
       { labelKey: "footer.links.processorList", path: "/Digital_Tribe_AVV_EN.pdf", isExternal: true },
@@ -24,33 +19,16 @@ export const Footer = () => {
   return (
     <footer className="border-t border-border/40">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="text-lg font-semibold text-foreground tracking-tight inline-block hover:opacity-80 smooth-transition">
               plugandpl<span className="text-accent">.ai</span>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              {t('footer.description')}
-            </p>
           </div>
 
           {/* Empty spacer column */}
           <div className="hidden md:block" />
-
-          {/* Product */}
-          <div>
-            <h4 className="text-sm font-medium text-foreground mb-4">{t('footer.product')}</h4>
-            <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.labelKey}>
-                  <Link href={link.path} className="text-sm text-muted-foreground hover:text-foreground text-smooth underline-smooth">
-                    {t(link.labelKey)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Legal */}
           <div>
