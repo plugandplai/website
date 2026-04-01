@@ -60,6 +60,7 @@ export default function MaintenancePage() {
       </div>
       </div>
 
+      <div className="pb-16" />
       <Footer />
     </div>
   );
