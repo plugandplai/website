@@ -6,8 +6,8 @@ import { Footer } from './components/layout/Footer';
 export default function MaintenancePage() {
   const t = useTranslations('maintenance');
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      <div className="flex-1 flex items-center justify-center relative overflow-hidden">
+    <div className="bg-background flex flex-col">
+      <div className="h-screen flex items-center justify-center relative overflow-hidden">
         {/* Background effects */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/15 rounded-full blur-[120px]" />
@@ -60,7 +60,6 @@ export default function MaintenancePage() {
       </div>
       </div>
 
-      <div className="pb-16" />
       <Footer />
     </div>
   );
